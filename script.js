@@ -44,8 +44,20 @@ function final_function(round_no){
     decision();
     alert("RESULT:\nyour points:"+userscore+"\ncomputer points:"+compscore);
 }
+function deision(){
+    if(userscore>compscore){
+        alert("RESULT:you won the battle yeah!!");
+    }
+    else if(userscore===compscore){
+        alert("RESULT: It's a tie reload to try again");
+    }
+    else{
+        alert("RESULT: you lose better luck next time.");
+    }
+}
 final_function(1);
 final_function(2);
 final_function(3);
 final_function(4);
 final_function(5);
+deision();
